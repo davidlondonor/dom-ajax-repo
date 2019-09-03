@@ -4,7 +4,7 @@ fetch("https://api.github.com/users/davidlondonor/repos")
   .then(jsonTransformado =>
     jsonTransformado.forEach(element => {
       const llamadoaUl = document.querySelector("#repos-list"); // Seleccionamos con query el ID de mi html
-      const creacionEtiquetasLi = document.createElement("li"); // Acá estamos creando los Li, pongo lo que necesite
+      const creacionEtiquetasLi = document.createElement("li"); // Acá estamos creando los Li, pongo lo que necesite, div, img
       const linkAmisRepos = document.createElement("a");
       const numerodeRepos = document.querySelector("#repos-count"); // para llamar al número de repos que necesito
 
