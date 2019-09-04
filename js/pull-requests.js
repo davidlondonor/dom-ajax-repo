@@ -7,8 +7,7 @@ fetch("https://api.github.com/repos/codeyourfuture/js-exercises/pulls")
     cargarLista(listadePullRequest);
   });
 
-const input = document.querySelector("#userInput");
-// input is a DOM element we already have using "querySelector"
+const input = document.querySelector("#userInput"); // input is a DOM element we already have using "querySelector"
 input.addEventListener("keyup", function(event) {
   const value = event.target.value;
   console.log(value);
@@ -16,8 +15,7 @@ input.addEventListener("keyup", function(event) {
     return item.user.login == value;
   });
   cargarLista(listFiltered);
-  console.log("lista filtrada", listFiltered);
-  // "value" will be the last value of the input field, and will be updated everytime the user types a new letter
+  console.log("lista filtrada", listFiltered); // "value" will be the last value of the input field, and will be updated everytime the user types a new letter
 });
 
 let child = listadePullRequest.lastElementChild;
